@@ -1,0 +1,22 @@
+{
+  "name": "uulala-styles",
+  "version": "1.0.0",
+  "description": "Uulala sass style sheets",
+  "main": "src/index.js",
+  "scripts": {
+    
+  },
+  "keywords": [
+    "uulala",
+    "javascipt",
+    "npm",
+    "sass",
+    "styles",
+    "web"
+  ],
+  "author": "Urbano Ballesteros",
+  "license": "MIT",
+  "files": [
+    "dist/*.{scss}"
+  ]
+}
