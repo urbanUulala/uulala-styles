@@ -18,6 +18,59 @@
   background-color: change-color($color: $color-highlighted, $alpha: 0.5);
 }
 
+/*** ------------ ***/
+/*  LARGE BUTTON  */
+/*** ------------ ***/
+
+%large-button {
+  @extend %button-radius;
+  @extend %white-text;
+  @extend %fs-11;
+  @extend %clickeable;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-purple-1;
+  height: 22px;
+  width: 152px;
+}
+
+%large-button:disabled {
+  background-color: change-color($color: $color-purple-1, $alpha: 0.5);
+}
+
+%large-button > img {
+  /*  position  */
+ padding: 5px;
+}
+
+/*** ------------ ***/
+/*  WELCOME BUTTON NEXT  */
+/*** ------------ ***/
+
+%shadow-button-next {
+  @extend %button-radius;
+  @extend %white-text;
+  @extend %fs-10;
+  @extend %clickeable;
+  background-color: $color-next-button-welcome;
+  height: 28px;
+  width : 88PX;
+
+}
+%shadow-button-next:not([class*=mat-elevation-z]) {
+  box-shadow: 0 0px 21px 4px rgb(141, 154, 239),
+  0 1px 1px 0 rgb(141, 154, 239), 
+  0 1px 3px 0 rgb(141, 154, 239);
+}
+%shadow-button-next:disabled {
+  background-color: change-color($color: $color-next-button-welcome, $alpha: 0.5);
+}
+%shadow-button-next > img {
+  /*  position  */
+ padding: 5px
+}
+
 /*** --------- ***/
 /*  EXIT BUTTON  */
 /*** --------- ***/
