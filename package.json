@@ -1,6 +1,6 @@
 {
   "name": "uulala-styles",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Uulala sass style sheets",
   "keywords": [
     "uulala",
@@ -13,6 +13,6 @@
   "author": "Urbano Ballesteros",
   "license": "MIT",
   "files": [
-    "dist/*.{scss}"
+    "uulala/*"
   ]
 }
