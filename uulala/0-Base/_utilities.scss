@@ -1,13 +1,23 @@
 @import "variables";
+@import "mixins";
 
 /*  CONTAINERS  */
-%general-container {
+.general-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
   width: 99%;
   height: 99vh;
+
+  @include media-query(720px) {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+%general-container {
+  @extend .general-container;
 }
 
 /*  STYLERS  */
